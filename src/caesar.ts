@@ -1,8 +1,9 @@
 const letters = "abcdefghijklmnopqrstuvwxyz"
 
-export function encodeWord(word, key) {
+export function encodeWord(word: string, key: number) {
     return word.split("")
-        .map(c => c[0].match(/[a-z]/) ? letters[(c.charCodeAt(0) + key - 97) % letters.length] : c[0])
+        .map(c => letters.indexOf(c) != -1 ? letters[(letters.indexOf(c) + key) % letters.length] : c)
+//        .map(c => c[0].match(/[a-z]/) ? letters[(c.charCodeAt(0) + key - 97) % letters.length] : c[0])
         .join("")
 
 }
