@@ -1,0 +1,28 @@
+{
+  "name": "sireto",
+  "version": "1.0.0",
+  "description": "Cryptography for Sireto Technology",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+    "test": "mocha -r ts-node/register test/**/*.spec.ts"
+  },
+  "author": "Dinesh Bhattarai <dineshbhattrai0@gmail.com> (https://dineshdb.github.io/)",
+  "license": "ISC",
+  "dependencies": {
+    "istanbul": "^0.4.5",
+    "nodemon": "^1.18.9",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.3.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "@types/sinon": "^7.0.5",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "sinon": "^7.2.3"
+  }
+}
