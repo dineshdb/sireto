@@ -17,5 +17,9 @@ describe("Polyalphabetic Substitution (Vigenere)", function () {
         expect(encode(text, "a")).to.equal(text)
         expect(decode(encoded, "a")).to.equal(encoded)
     });
+
+    it("Should be reversible", function(){
+        expect(decode(encode(text, key), key)).to.equal(text)
+    })
 });
 
