@@ -1,5 +1,5 @@
 import { expect } from "chai"
-import { encode, decode, letters } from "../src/vigenere"
+import { encode, decode } from "../src/vigenere"
 
 let key = "relationsrela"
 let text = "TOBEORNOTTOBE".toLowerCase()
