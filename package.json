@@ -9,15 +9,26 @@
     "build:live": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
     "test": "mocha -r ts-node/register test/**/*.spec.ts"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dineshdb/sireto.git"
+  },
+  "keywords": [
+    "cryptography",
+    "typescript",
+    "node"
+  ],
   "author": "Dinesh Bhattarai <dineshbhattrai0@gmail.com> (https://dineshdb.github.io/)",
+  "bugs": {
+    "url": "https://github.com/dineshdb/sireto/issues"
+  },
+  "homepage": "https://github.com/dineshdb/sireto#readme",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "istanbul": "^0.4.5",
     "nodemon": "^1.18.9",
     "ts-node": "^8.0.2",
-    "typescript": "^3.3.1"
-  },
-  "devDependencies": {
+    "typescript": "^3.3.1",
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.5",
     "@types/sinon": "^7.0.5",
